@@ -1,45 +1,43 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
+import data from "./data/dataMahasiswa.json";
 import "./App.css";
 
-import Profile from "./components/Profile.jsx";
-import dataMahasiswa from "./data/dataMahasiswa.json";
-
 function App() {
-  const [count, setCount] = useState(0);
+  const profile = data?.profile || {};
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="page">
+      {/* HEADER CARD */}
+      <div className="header-card">
+        <img
+          src={profile.photo_url || "https://via.placeholder.com/120"}
+          className="profile-photo"
+          alt="profile"
+        />
+
+        <div className="header-info">
+          <h1>{profile.full_name}</h1>
+          <p className="headline">{profile.headline}</p>
+
+          <div className="tag-list">
+            <span className="tag">{profile.nim}</span>
+            <span className="tag">{profile.prodi}</span>
+            <span className="tag">Angkatan {profile.angkatan}</span>
+          </div>
+
+          <div className="sub-info">
+            <span>📍 {profile.location}</span>
+            <span>👁 {data?.statistics?.views_count} views</span>
+          </div>
+
+          <p className="bio">{profile.short_bio}</p>
+
+          <a href={profile.portfolio_url} target="_blank" rel="noreferrer">
+            <button className="portfolio-btn">Visit Portfolio</button>
+          </a>
+        </div>
       </div>
-
-      <h1>Vite + React</h1>
-
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-
-      {/* PROFILE */}
-      <div className="mt-10">
-        <Profile data={dataMahasiswa} />
-      </div>
-    </>
+    </div>
   );
 }
 
