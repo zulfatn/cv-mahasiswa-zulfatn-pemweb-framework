@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "lucide-react";
+import dataMahasiswa from "./data/dataMahasiswa.json";
 
 const Profile = ({ data }) => {
   const profile = data.profile; 
