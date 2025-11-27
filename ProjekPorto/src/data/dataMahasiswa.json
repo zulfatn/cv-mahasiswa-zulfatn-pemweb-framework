@@ -8,8 +8,8 @@
     "prodi": "Teknik Informatika",
     "angkatan": "2023",
     "photo_url": "/public/profile.jpeg",
-    "headline": "Fullstack Web Developer | React & Django Enthusiast",
-    "short_bio": "Mahasiswa UMS dengan minat pada pengembangan web fullstack.",
+    "headline": "Network & Systems Engineer Enthusiast | Computer Network Specialist",
+    "short_bio": "Mahasiswa UMS yang fokus pada bidang jaringan komputer, khususnya dalam desain, konfigurasi, dan pengelolaan jaringan, serta memiliki ketertarikan pada keamanan jaringan dan teknologi server modern.",
     "location": "Surakarta, Jawa Tengah",
     "portfolio_url": "https://zulfatrian.com"
   },
@@ -17,7 +17,7 @@
   "skills": [
     {
       "id": 1,
-      "name": "ReactJS",
+      "name": "Network Configuration",
       "category": "technical",
       "level": "advanced",
       "is_main": true,
@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "name": "Django REST Framework",
+      "name": "Network Security",
       "category": "technical",
       "level": "intermediate",
       "is_main": true,
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "name": "Tailwind CSS",
+      "name": "Server Management",
       "category": "technical",
       "level": "intermediate",
       "is_main": true,
@@ -47,37 +47,37 @@
   "experiences": [
     {
       "id": 101,
-      "title": "Frontend Developer Intern",
+      "title": "Network Technician Intern",
       "organization": "PT Digital Solusi Nusantara",
       "experience_type": "internship",
       "start_date": "2024-07-01",
       "end_date": "2024-09-30",
       "is_current": false,
-      "description": "Mengembangkan antarmuka dashboard internal menggunakan React.",
-      "technologies": ["ReactJS", "Tailwind CSS"],
+      "description": "Melakukan konfigurasi jaringan internal perusahaan, troubleshooting koneksi, serta membantu tim infrastruktur dalam melakukan monitoring perangkat jaringan seperti router, switch, dan access point.",
+      "technologies": ["Cisco IOS", "VLAN & Trunking"],
       "image_url": "https://cdn.example.com/company/digitalsolusi.png"
     },
     {
       "id": 102,
-      "title": "Head of Web Development Division",
+      "title": "Head of Network & Infrastructure Division",
       "organization": "UKM Informatika UMS",
       "experience_type": "organization",
       "start_date": "2023-01-01",
       "end_date": "2023-12-31",
       "is_current": false,
-      "description": "Mengkoordinasi tim pengembang web untuk kegiatan UKM.",
+      "description": "Mengkoordinasi tim jaringan dalam pengelolaan lab, melakukan setup jaringan untuk kegiatan organisasi, serta memastikan keamanan dan stabilitas jaringan selama event berlangsung.",
       "image_url": "https://cdn.example.com/logo/ukm-informatika.png"
     },
     {
       "id": 103,
-      "title": "Backend Developer (Freelance)",
+      "title": "Network Administrator (Freelance)",
       "organization": "Freelance Project",
       "experience_type": "project",
       "start_date": "2024-10-01",
       "end_date": null,
       "is_current": true,
-      "description": "Membangun API backend UMKM menggunakan DRF dan PostgreSQL.",
-      "technologies": ["Django", "DRF", "PostgreSQL"],
+      "description": "Mengelola dan mengoptimalkan infrastruktur jaringan UMKM, termasuk konfigurasi router, pembuatan sistem monitoring jaringan, serta penerapan kebijakan keamanan dasar untuk melindungi layanan bisnis..",
+      "technologies": ["MikroTik RouterOS", "VLAN", "SSH Tools"],
       "image_url": "https://cdn.example.com/projects/umkm-inventory.png"
     }
   ],
