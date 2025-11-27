@@ -12,7 +12,7 @@ function App() {
       {/* HEADER CARD */}
       <div className="header-card">
         <img
-          src={profile.photo_url || "https://via.placeholder.com/120"}
+          src={profile.photo_url || "profile.jpeg"}
           className="profile-photo"
         />
 
@@ -62,6 +62,42 @@ function App() {
                 style={{ width: skill.level === "advanced" ? "100%" : "66%" }}
               ></div>
             </div>
+          </div>
+        ))}
+      </div>
+      {/* EXPERIENCE */}
+      <h2 className="section-title">Experience</h2>
+
+      <div className="exp-list">
+        {experiences.map((exp) => (
+          <div className="exp-card" key={exp.id}>
+            <div className="exp-header">
+              <img
+                src={exp.image_url}
+                className="exp-icon"
+                onError={(e) => (e.target.style.display = "none")}
+              />
+              <div>
+                <h3>{exp.title}</h3>
+                <p className="org">{exp.organization}</p>
+                <p className="date">
+                  {exp.start_date} — {exp.is_current ? "Present" : exp.end_date}
+                </p>
+              </div>
+              <span className="exp-badge">{exp.experience_type}</span>
+            </div>
+
+            <p className="exp-desc">{exp.description}</p>
+
+            {exp.technologies && (
+              <div className="tech-list">
+                {exp.technologies.map((t) => (
+                  <span key={t} className="tech-tag">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>

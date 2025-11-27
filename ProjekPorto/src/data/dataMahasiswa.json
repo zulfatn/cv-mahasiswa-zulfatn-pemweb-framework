@@ -1,17 +1,17 @@
 {
   "id": 12,
-  "slug": "aulia-pratama-2103010023",
+  "slug": "zulfa-trian-L200230250",
 
   "profile": {
     "full_name": "Zulfa Trian Nasrullah",
     "nim": "L200230250",
     "prodi": "Teknik Informatika",
     "angkatan": "2023",
-    "photo_url": "https://cdn.talenta-ums.ac.id/photos/aulia.jpg",
+    "photo_url": "/public/profile.jpeg",
     "headline": "Fullstack Web Developer | React & Django Enthusiast",
     "short_bio": "Mahasiswa UMS dengan minat pada pengembangan web fullstack.",
     "location": "Surakarta, Jawa Tengah",
-    "portfolio_url": "https://auliapratama.com"
+    "portfolio_url": "https://zulfatrian.com"
   },
 
   "skills": [
@@ -38,8 +38,9 @@
       "name": "Tailwind CSS",
       "category": "technical",
       "level": "intermediate",
-      "is_main": false,
-      "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+      "is_main": true,
+      "years_of_experience": 1,
+      "icon_url": "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"
     }
   ],
 
