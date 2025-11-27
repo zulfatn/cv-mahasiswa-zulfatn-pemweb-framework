@@ -22,7 +22,7 @@
       "level": "advanced",
       "is_main": true,
       "years_of_experience": 2,
-      "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      "icon_url": "http://corbanpc.com/wp/wp-content/uploads/2016/03/network-web-generic-02-1024x988.png"
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@
       "level": "intermediate",
       "is_main": true,
       "years_of_experience": 1,
-      "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/10276/10276315.png"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
       "level": "intermediate",
       "is_main": true,
       "years_of_experience": 1,
-      "icon_url": "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"
+      "icon_url": "https://www.freepnglogos.com/uploads/server-png/server-icon-download-png-and-vector-13.png"
     }
   ],
 
