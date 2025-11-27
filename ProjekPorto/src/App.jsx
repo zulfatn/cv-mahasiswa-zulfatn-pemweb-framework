@@ -3,8 +3,9 @@ import data from "./data/dataMahasiswa.json";
 import "./App.css";
 
 function App() {
-  const profile = data?.profile || {};
-  const skills = data?.skills || [];
+  const profile = data.profile;
+  const skills = data.skills;
+  const experiences = data.experiences;
 
   return (
     <div className="page">
@@ -13,7 +14,6 @@ function App() {
         <img
           src={profile.photo_url || "https://via.placeholder.com/120"}
           className="profile-photo"
-          alt="profile"
         />
 
         <div className="header-info">
@@ -28,16 +28,14 @@ function App() {
 
           <div className="sub-info">
             <span>📍 {profile.location}</span>
-            <span>👁 {data?.statistics?.views_count} views</span>
+            <span>👁 {data.statistics.views_count} views</span>
           </div>
 
           <p className="bio">{profile.short_bio}</p>
 
-          {profile.portfolio_url && (
-            <a href={profile.portfolio_url} target="_blank" rel="noreferrer">
-              <button className="portfolio-btn">Visit Portfolio</button>
-            </a>
-          )}
+          <a href={profile.portfolio_url} target="_blank">
+            <button className="portfolio-btn">Visit Portfolio</button>
+          </a>
         </div>
       </div>
 
@@ -48,12 +46,7 @@ function App() {
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <div className="skill-top">
-              <img
-                src={skill.icon_url}
-                className="skill-icon"
-                alt={skill.name}
-              />
-
+              <img src={skill.icon_url} className="skill-icon" />
               {skill.is_main && <span className="main-badge">Main</span>}
             </div>
 
@@ -66,14 +59,7 @@ function App() {
             <div className="progress-bar">
               <div
                 className="progress-fill"
-                style={{
-                  width:
-                    skill.level === "advanced"
-                      ? "100%"
-                      : skill.level === "intermediate"
-                      ? "66%"
-                      : "40%",
-                }}
+                style={{ width: skill.level === "advanced" ? "100%" : "66%" }}
               ></div>
             </div>
           </div>
