@@ -21,7 +21,7 @@ Fitur utama aplikasi:
    "http://localhost:5173/"
 
 # Link deployment 
-
+"https://cv-mahasiswa-zulfatn-pemweb-framewo-pi.vercel.app/"
 
 # Screenshot Tampilan 
 ![Tampilan Web 1](./Screenshot/Tampilan1.png)
